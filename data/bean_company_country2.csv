@@ -1,0 +1,97 @@
+,company_number,country,number_of_beans,Continent
+1,1,Argentina,0,NA
+2,10,Australia,3,Oceania
+3,3,Austria,0,NA
+4,12,Belgium,0,NA
+5,9,Brazil,74,South America
+6,29,Canada,0,NA
+7,1,Chile,0,NA
+8,6,Colombia,65,South America
+9,3,Costa rica,42,North America
+10,2,Czech republic,0,NA
+11,4,Denmark,0,NA
+12,4,Dominican republic,200,North America
+13,13,Ecuador,194,South America
+14,1,El salvador,6,North America
+15,1,Fiji,15,Oceania
+16,2,Finland,0,NA
+17,19,France,0,NA
+18,10,Germany,0,NA
+19,1,Ghana,32,Africa
+20,1,Grenada,17,North America
+21,2,Guatemala,53,North America
+22,1,Honduras,23,North America
+23,3,Hungary,0,NA
+24,1,Iceland,0,NA
+25,2,India,20,Asia
+26,2,Ireland,0,NA
+27,1,Israel,0,NA
+28,10,Italy,0,NA
+29,10,Japan,0,NA
+30,1,Lithuania,0,NA
+31,5,Madagascar,157,Africa
+32,1,Malaysia,7,Asia
+33,1,Martinique,1,North America
+34,5,Mexico,0,NA
+35,6,Netherlands,0,NA
+36,6,New zealand,0,NA
+37,3,Nicaragua,92,North America
+38,1,Norway,0,NA
+39,11,Peru,207,South America
+40,2,Philippines,19,Asia
+41,1,Poland,0,NA
+42,1,Portugal,0,NA
+43,3,Puerto rico,6,North America
+44,1,Russia,0,NA
+45,2,Sao tome,16,Africa
+46,1,Sao tome & principe,1,Africa
+47,3,Scotland,0,NA
+48,2,Singapore,0,NA
+49,3,South africa,0,NA
+50,5,South korea,0,NA
+51,7,Spain,0,NA
+52,2,St. lucia,9,North America
+53,1,St.vincent-grenadines,1,North America
+54,1,Suriname,1,South America
+55,4,Sweden,0,NA
+56,10,Switzerland,0,NA
+57,3,Taiwan,2,Asia
+58,2,Thailand,5,Asia
+59,1,U.a.e.,0,NA
+60,25,U.k.,0,NA
+61,211,United States,28,North America
+62,1,Vanuatu,12,Oceania
+63,5,Venezuela,238,South America
+64,4,Vietnam,64,Asia
+65,1,Wales,0,NA
+66,0,Tanzania,63,Africa
+67,0,Bolivia,71,South America
+68,0,Papua new guinea,48,Oceania
+69,0,Myanma,1,Asia
+70,0,Panama,9,North America
+71,0,Cuba,12,North America
+72,0,Togo,3,Africa
+73,0,united mexican states,45,North America
+74,0,Indonesia,17,Asia
+75,0,Trinidad,38,North America
+76,0,Belize,65,North America
+77,0,Blend,140,
+78,0,Jamaica,23,North America
+79,0,Haiti,24,North America
+80,0,Congo,13,Africa
+81,0,Solomon islands,10,Oceania
+82,0,Uganda,10,Africa
+83,0,Sri lanka,3,Asia
+84,0,Ivory coast,4,Africa
+85,0,Gabon,1,Africa
+86,0,Liberia,3,Africa
+87,0,Sierra leone,3,Africa
+88,0,Nigeria,2,Africa
+89,0,Tobago,1,North America
+90,0,Bolvia,1,South America
+91,0,Sumatra,1,Asia
+92,0,Cameroon,3,Africa
+93,0,Samoa,3,Oceania
+94,0,Principe,3,Africa
+95,0,Sulawesi,1,Asia
+96,0,Dr congo,1,Africa

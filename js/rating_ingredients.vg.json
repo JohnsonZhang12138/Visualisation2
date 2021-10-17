@@ -1,0 +1,48 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "How Ingredients Affect Chocolate Bar Rating",
+    "data": {"url": "https://raw.githubusercontent.com/JohnsonZhang12138/Visualisation2/main/data/rating_ingredients.csv"},
+    "width": 300, 
+    "height": 200,
+  
+    "params":[
+      {
+        "name": "year_above",
+        "value": 2006,
+        "bind": {
+          "input": "range",
+          "min": 2006,
+          "max": 2020,
+          "step": 1,
+          "name": "Year: "
+        }
+      }
+    ],
+  
+    "transform": [
+      {"filter": "datum.review_date >= year_above"}
+    ],
+  
+    "mark": {"opacity": 0.7, "type": "circle", "color": "#e6550d"},
+    "encoding": {
+      "x": {      
+        "field": "rating",
+        "type": "quantitative",
+        "axis": {"title": "Chocolate Bar Rating", "grid": false},
+        "scale": {"domain": [1, 4]}
+      },
+      "y": {      
+        "field": "counts_of_ingredients",
+        "type": "quantitative",
+        "axis": {"title": "Number of Ingredients", "grid": false},
+        "scale": {"domain": [1, 6]}
+      },
+      "size": {"aggregate": "count", "title": "Number of Chocolate Bars"},
+      "tooltip": [
+        {"field": "rating", "type": "quantitative", "title": "Chocolate Bar Rating"},
+        {"field": "counts_of_ingredients", "type": "quantitative", "format": ",", "title":"Number of Ingredients"},
+        {"aggregate": "count", "type": "quantitative", "format": ",", "title":"Number of Chocolate Bars"}
+      ]
+    }  
+  }
+  

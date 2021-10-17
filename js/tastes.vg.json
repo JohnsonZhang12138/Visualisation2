@@ -1,0 +1,60 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Top 10 Most common Tastes of Chocolate Bars",
+    "description": "Bar chart with text labels. Set domain to make the frame cover the labels.",
+    "data": {
+      "values": [
+        {"category": "Nutty", "value": 238},
+        {"category": "Sweet", "value": 237},
+        {"category": "Cocoa", "value": 203},
+        {"category": "Roasty", "value": 198},
+        {"category": "Creamy", "value": 184},
+        {"category": "Earthy", "value": 164},
+        {"category": "Sandy", "value": 153},
+        {"category": "Fatty", "value": 149},
+        {"category": "Floral", "value": 133},
+        {"category": "Intense", "value": 132},
+        {"category": "Spicy", "value": 122},
+        {"category": "Sour", "value": 122}
+      ]
+    },
+    "params":[
+      {
+        "name": "types_above",
+        "value": 122,
+        "bind": {
+          "input": "range",
+          "min": 120,
+          "max": 235,
+          "step": 5,
+          "name": "Types: "
+        }
+      }
+    ],
+    "transform": [
+      {"filter": "datum.value >= types_above"}
+    ],
+  
+    "encoding": {
+      "x": {"field": "value", "type": "quantitative", "axis": {"title": "Types of Chocolate bars ", "grid": false}},
+      "y": {"field": "category", "type": "nominal","axis": {"title": "Tastes of Chocolate Bar", "grid": false}},
+      "tooltip": [
+        {"field": "category", "type": "nominal", "title": "Tastes of Chocolate Bar"},
+        {"field": "value", "type": "quantitative", "format": ",",     "title":"Types of Chocolate bars"}
+      ]
+    },
+    "layer": [{
+      "mark": {"opacity": 0.7, "type": "bar", "color": "#e6550d"}
+    }, {
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "middle",
+        "dx": 10
+      },
+      "encoding": {
+        "text": {"field": "value", "type": "quantitative"}
+      }
+    }]
+  }
+  

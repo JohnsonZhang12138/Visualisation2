@@ -1,0 +1,61 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Cocoa Percentage of Chololate bar",
+  "data": {"url": "https://raw.githubusercontent.com/JohnsonZhang12138/Visualisation2/main/data/date_cocoa_clean.csv"},
+  "vconcat": [{
+    "width": 480,
+    "mark": {"opacity": 0.7, "type": "area", "color": "#e6550d"},
+    "encoding": {
+      "x": {
+        "field": "review_date",
+        "type": "temporal",
+        "scale": {"domain": {"param": "brush"}},
+        "axis": {"title": "Date", "grid": false}
+      },
+      "y": {
+          "aggregate": "average",
+          "field": "cocoa_percent_max",
+          "scale": {"domain": [0, 100]},
+          "title": "Cocoa Percentage",
+          "axis": {"grid": false}
+        },
+
+      "y2": {
+        "aggregate": "average",
+        "field": "cocoa_percent_min"
+      },
+      "tooltip": [
+      {"field": "review_date", "type": "temporal", "title": "Date"},
+      {"field": "cocoa_percent_max", "type": "quantitative", "format": ",", "title":"Maximum Cocoa Percentage"},
+      {"field": "cocoa_percent_min", "type": "quantitative", "format": ",", "title":"Minimum Cocoa Percentage"}
+    ]
+    }
+  }, {
+    "width": 480,
+    "height": 60,
+    "mark": {"opacity": 0.7, "type": "area", "color": "#e6550d"},
+    "params": [{
+      "name": "brush",
+      "select": {"type": "interval", "encodings": ["x"]}
+    }],
+    "encoding": {
+      "x": {
+        "field": "review_date",
+        "type": "temporal",
+        "axis": {"title": "Date", "grid": false}
+      },
+      "y": {
+          "aggregate": "average",
+          "field": "cocoa_percent_max",
+          "scale": {"domain": [0, 100]},
+          "title": "Cocoa Percentage",
+          "axis": {"grid": false}
+      },
+
+      "y2": {
+        "aggregate": "average",
+        "field": "cocoa_percent_min"
+      }
+    }
+  }]
+}

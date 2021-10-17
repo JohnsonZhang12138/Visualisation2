@@ -1,7 +1,9 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Top 10 Most common Tastes of Chocolate Bars",
-    "description": "Bar chart with text labels. Set domain to make the frame cover the labels.",
+    "title": "Top 10 Common Tastes of Chocolate Bars",
+    "background": "#f6f0e8",
+    "width": 460, 
+    "height": 300,
     "data": {
       "values": [
         {"category": "Nutty", "value": 238},

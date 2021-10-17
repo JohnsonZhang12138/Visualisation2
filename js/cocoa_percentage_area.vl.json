@@ -1,9 +1,10 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Cocoa Percentage of Chololate bar",
+  "title": {"text": "Cocoa Percentage of Chololate bar", "anchor": "middle"},
+  "background": "#f6f0e8",
   "data": {"url": "https://raw.githubusercontent.com/JohnsonZhang12138/Visualisation2/main/data/date_cocoa_clean.csv"},
   "vconcat": [{
-    "width": 480,
+    "width": 450,
     "mark": {"opacity": 0.7, "type": "area", "color": "#e6550d"},
     "encoding": {
       "x": {
@@ -31,7 +32,7 @@
     ]
     }
   }, {
-    "width": 480,
+    "width": 450,
     "height": 60,
     "mark": {"opacity": 0.7, "type": "area", "color": "#e6550d"},
     "params": [{

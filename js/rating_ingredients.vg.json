@@ -1,8 +1,9 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": "How Ingredients Affect Chocolate Bar Rating",
+    "background": "#f6f0e8",
     "data": {"url": "https://raw.githubusercontent.com/JohnsonZhang12138/Visualisation2/main/data/rating_ingredients.csv"},
-    "width": 300, 
+    "width": 460, 
     "height": 200,
   
     "params":[
@@ -28,7 +29,7 @@
       "x": {      
         "field": "rating",
         "type": "quantitative",
-        "axis": {"title": "Chocolate Bar Rating", "grid": false},
+        "axis": {"title": "Chocolate Bar Rating", "grid": false, "tickCount": 5},
         "scale": {"domain": [1, 4]}
       },
       "y": {      

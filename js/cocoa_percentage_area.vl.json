@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": {"text": "Cocoa Percentage of Chololate bar", "anchor": "middle"},
+  "title": {"text": "Cocoa Percentage of Chocolate bar", "anchor": "middle"},
   "background": "#f6f0e8",
   "data": {"url": "https://raw.githubusercontent.com/JohnsonZhang12138/Visualisation2/main/data/date_cocoa_clean.csv"},
   "vconcat": [{
